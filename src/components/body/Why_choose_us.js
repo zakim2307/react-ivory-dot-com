@@ -6,19 +6,21 @@ function Whychooseus(){
     return(
       <Fragment>
         <div>
-          <div class="container-fluid whoweare">
+          <div class="container whoweare mt-5">
             <div class="row d-flex flex-row">
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <img src={whychooseus} className="img-fliud max-width-img" alt="whoarewe" />
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12 why-choose-us-reverse-order">
-                <h6 className="whoweare-h6-heading">
+                <h6 className="whoweare-h6-heading whoweare">
                   WHY CHOOSE US
                 </h6>
                 <h2 className="whoweare-h2-heading">
                   OUR SISTER COMPANIES
                 </h2>
                 <hr class="whoweare-hr-tag" />
+                <div className="whoweare">
+
                 <p className="whoweare-paragraph">
                   We work in collaboration with our sister companies for seemless construction processes like digging up sites, transportation of constructionmaterials, use of heavy construction machinery, plumbing, tiling etc without any delays.
                 </p>
@@ -31,6 +33,7 @@ function Whychooseus(){
                 <p className="whoweare-paragraph">
                   We work as a team to make our construction process seemless, fast and reliable for our customers.
                 </p>
+                </div>
                 <h6 className="whoweare-h6-heading-second">TRUST OUR PROCESS</h6>
               </div>
               

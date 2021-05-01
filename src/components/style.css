@@ -1,3 +1,28 @@
+@font-face {
+  font-family: OPTIAuvantGothic-Medium;
+  src: url(./assets/OPTIAuvantGothic-Medium.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Bold;
+  src: url(./assets/Marmelat-Bold.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Black;
+  src: url(./assets/Marmelat-Black.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Book;
+  src: url(./assets/Marmelat-Book.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Medium;
+  src: url(./assets/Marmelat-Medium.otf);
+}
+
 .navbar {
   background-color: rgba(253, 253, 253, 0);
   z-index: 9999;
@@ -18,37 +43,43 @@
 }
 
 .sidebar {
+    font-family: OPTIAuvantGothic-Medium;
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1020;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
+    padding-left: 0px;
   }
   
   .sidebar a {
+    margin-top: 10px;
+    letter-spacing: 3.5px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    font-weight:100;
+    color: #c3996c;
     display: block;
     transition: 0.3s;
   }
   
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: #603d27;
   }
   
   .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 25px; */
+    font-size: 46px;
+    /* margin-left: 50px; */
+    color: #c3996c;
   }
 
 .openbtn {
@@ -62,6 +93,44 @@
 
 .openbtn:hover {
   background-color: rgba(68, 68, 68, 0.356);
+}
+
+.sidebar .hr-sidebar-tag {
+  border: 2px solid #C3996C;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2em;
+}
+
+.social-sidebar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-sidebar-container .sidebar-h4-heading {
+  font-size: 14px;
+  color: #3d3d3d;
+  margin: 0px;
+  padding: 10px;
+  border: 3px solid #3d3d3d;
+  border-radius: 25px;
+}
+
+.contact-sidebar {
+  font-family: Marmelat-Book;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+.contact-sidebar-h4 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-size: 18px;
+  color: #3B3B3B;
 }
 
 #main {
@@ -97,7 +166,7 @@
   font-size: 119px;
   color: #C3996C;
   min-height: 600px;
-  margin-left: -225px;
+  margin-left: 0px;
   font-weight: 400;
 }
 
@@ -150,7 +219,9 @@
 }
 
 .whoweare{
-  padding: 100px 225px;
+  font-family: Marmelat-Book;
+  font-weight: 100;
+  color: #464646;
 }
 
 .whoweare-h6-heading{
@@ -159,6 +230,7 @@
 }
 
 .whoweare-h2-heading{
+  font-family: OPTIAuvantGothic-Medium;
   letter-spacing: 2.25px;
   color: #603B17;
   margin-top: 0.5em;
@@ -192,7 +264,8 @@
   color: #613e28;
   background-color: #c29776;
   text-align: left;
-  width: 43%;
+  width: 60%;
+  padding: 5px;
 }
 
 .our-expertise-border-backround {
@@ -213,7 +286,7 @@
   position: absolute; 
   bottom: 0; 
   background: #C3996C;
-  background: #C3996C; /* Black see-through */
+  background: #C3996C;
   color: #f1f1f1; 
   width: 100%;
   transition: .5s ease;
@@ -222,8 +295,9 @@
   font-size: 20px;
   padding: 20px;
   opacity: 1;
-  text-align: center;
-  max-width: 71%;
+  text-align: left; 
+  padding-left: 50px;
+  width: 71%;
 }
 
 .projects_images{
@@ -301,6 +375,23 @@ padding: 10px 100px;
   margin: 5px;
 }
 
+@media only screen and (min-height: 630px) and (max-height: 640px) {
+  #banner {
+    /* position: absolute; */
+    min-height: 640px;
+  }
+
+  .middle {
+    max-height: 660px;
+  }
+}
+
+@media only screen and (min-width: 1720px) and (max-width: 1920px) {
+  .large-font-size {
+    margin-left: -225px;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .middle {
     width: 100%;
@@ -316,8 +407,8 @@ padding: 10px 100px;
     left: 30%;
   }
 
-  .whoweare{
-    padding: 100px 15px;
+  .contact-minus-margin {
+    margin-left: 0px!important;
   }
 
   .whoweare-h6-heading-second{

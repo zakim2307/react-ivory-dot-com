@@ -13,7 +13,7 @@ function Contact(props){
     }
     return(
       <Fragment>
-        <section className="bg-background-contact">
+        <section className="bg-background-contact mt-5">
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center">
@@ -34,27 +34,27 @@ function Contact(props){
                   CONTACT US
                 </h2>
                 <hr className="whoweare-hr-tag" />
-                <h6 className="whoweare-h2-heading ml-5">
+                <h6 className="whoweare-h2-heading contact-minus-margin ml-5">
                   Little About You
                 </h6>
               </div>
             </div>
-            <div className="row ml-5 mt-5 d-flex flex-row">
+            <div className="row ml-5 mt-5 d-flex flex-row contact-minus-margin">
                 <form onSubmit={handleSubmit} style={{width:'100%'}}>
                     <div className="col-lg-4 col-md-6 col-sm-12 mb-5">
-                        <input className="styled-form-component" type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Name"/>
+                        <input className="styled-form-component form-control" type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Name"/>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12 mb-5">
-                        <input className="styled-form-component" type="text" value={phone} onChange={e => setPhone(e.target.value)} placeholder="Phone"/>
+                        <input className="styled-form-component form-control" type="text" value={phone} onChange={e => setPhone(e.target.value)} placeholder="Phone"/>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 mb-5">
-                        <input className="styled-form-component" type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email"/>
+                        <input className="styled-form-component form-control" type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email"/>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12 mr-5 mb-5">
-                        <textarea className="styled-form-component" id="w3review" value={message} onChange={e => setMessage(e.target.value)} placeholder="Enter A Message" name="message" rows="4" cols="50"></textarea>
+                        <textarea className="styled-form-component form-control" id="w3review" value={message} onChange={e => setMessage(e.target.value)} placeholder="Enter A Message" name="message" rows="4" cols="50"></textarea>
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                        <button className="btn btn-primary-send submit">Send</button>
+                        <button className="btn btn-primary-send form-control submit">Send</button>
                     </div>
                 </form>
               {/* <div className="our-expertise-border-backround"></div> */}

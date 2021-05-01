@@ -13,7 +13,7 @@ function Projects(){
     return(
       <Fragment>
         <section>
-          <div className="container-fluid whoweare">
+          <div className="container">
             <div className="row d-flex flex-row">
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <h2 className="whoweare-h2-heading">

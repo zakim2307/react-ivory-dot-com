@@ -4,8 +4,8 @@ import logo from '../images/logo-ivory.png';
 
 function Navbar() {
     const openNav = useCallback(() => { 
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidebar").style.width = "450px";
+        document.getElementById("main").style.marginLeft = "0px";
     });
 
     const closeNav = useCallback(() => { 
@@ -28,7 +28,7 @@ function Navbar() {
                 <div className="middle">
                 </div>    
             </div>
-            <nav className={`navbar navbar-expand-md ${scroll ? "sticky-bar" : ""}`}>
+            <nav className={`navbar navbar-expand-md sticky-bar `}>
             <div className="order-1 order-md-0 d-flex flex-row">
             <ul className="navbar-nav mr-auto d-flex flex-row">
             <li className="nav-item">
@@ -41,15 +41,40 @@ function Navbar() {
     </div>
 </nav>
 <div id="mySidebar" className="sidebar">
-                <a className="closebtn" style={{color:'white'}} onClick={closeNav}>X</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <a className="closebtn" style={{color:'#c3996c'}} onClick={closeNav}>X</a>
+                <a href="#">WHO WE ARE</a>
+                <a href="#">WHY CHOOSE US</a>
+                <a href="#">OUR EXPERTISE</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">PROJECTS</a>
+                <div className="container">
+                <hr className="hr-sidebar-tag" />
+                </div>
+                <div className="social-sidebar-container">
+                    <a href="https://facebook.com"><h4 class="sidebar-h4-heading"><i class="fi-snsuxl-facebook"></i></h4>
+                    </a>
+                    <a href="https://instagram.com">
+                        <h4 class="sidebar-h4-heading"><i class="fi-xnsuxl-instagram"></i></h4>
+                        </a>
+                    <a href="https://linkedin.com">
+                        <h4 class="sidebar-h4-heading"><i class="fi-snsuxl-linkedin"></i></h4>
+                    </a>
+                    <a href="https://linkedin.com">
+                        <h4 class="sidebar-h4-heading"><i class="fi-xnsuxl-map-marker-solid"></i></h4>
+                    </a>
+                </div>
+                <div class="contact-sidebar">
+                    <h4 class="contact-sidebar-h4">
+                        +91 90355 11225
+                    </h4>
+                    <h4 class="contact-sidebar-h4">
+                        enquiry@ivory.com
+                    </h4>
+                </div>
             </div>
-            <div className="container">
+            <div className="container pt-5">
                 <div className="row">
-                    <div className="col-offset-lg-2 col-lg-6 col-md-12 col-sm-12 d-flex">
+                    <div className="col-offset-lg-2 col-lg-9 col-md-12 col-sm-12 d-flex">
                         <h1 class="large-font-size">We Create Homes</h1>
                     </div>
                 </div>
