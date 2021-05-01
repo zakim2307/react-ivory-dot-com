@@ -277,6 +277,30 @@ border-color: #603B17;
 padding: 10px 100px;
 }
 
+.dark-bg {
+  background-color: #202328;
+  margin-top: 75px;
+}
+
+.footer-h3-heading{
+  color: #55585D;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+
+}
+
+.footer-h4-heading{
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 28px;
+}
+
+.social-icons-footer .footer-h4-heading{
+  font-size: 14px;
+  margin: 5px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .middle {
     width: 100%;

@@ -5,6 +5,7 @@ import './App.css';
 import Our_expertise from './components/body/Our_expertise';
 import Projects from './components/body/Projects';
 import Contact from './components/body/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
         <Our_expertise />
         <Projects />
         <Contact />
+        <Footer />
     </div>
   );
 }

@@ -1,34 +1,34 @@
 import React, {Fragment} from "react";
 import '../style.css';
-import whoweare from '../images/whoweare.jpg'; 
-import our_expertise_1 from '../images/our_expertise_1.jpg'; 
-import our_expertise_2 from '../images/our_expertise_2.jpg'; 
+import India from '../images/india.png'; 
 
 function Our_expertise(){
     return(
       <Fragment>
-        <section>
-          <div className="container-fluid whoweare">
-            <div className="row d-flex flex-row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h2 className="whoweare-h2-heading">
-                  OUR EXPERTISE
-                </h2>
-                <hr className="whoweare-hr-tag" />
-              </div>
-            </div>
+        <section class="dark-bg pt-5">
+          <div className="container">
             <div className="row mt-5">
-              <div className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
-                <img src={our_expertise_2} className="img-fliud width-img-less" alt="whoarewe" />
-                <div class="our-expertise">Residential Constructions</div>
+              <div className="col-lg-6 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
+                <img src={India} className="img-fliud width-img-less" alt="whoarewe" />
               </div>
-              <div className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
-                <img src={our_expertise_1} className="img-fliud width-img-less" alt="whoarewe" />
-                <div class="our-expertise">Industrial Constructions</div>
-              </div>
-              <div className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
-                <img src={whoweare} className="img-fliud width-img-less" alt="whoarewe" />
-                <div class="our-expertise">Institutional Constructions</div>
+              <div className="col-lg-6 col-md-12 col-sm-12 d-flex flex-column flex-wrap justify-content-center mb-5">
+                <h4 class="text-light footer-h4-heading">If you would like to discuss your next construction project or for future employment queries, please do not hesitate to send us an email at <a href="mailto:enquiry@ivory.com">enquiry@ivory.com</a></h4>
+                <div class="mt-5">
+                    <h3 class="footer-h3-heading">FIND US</h3>
+                    <h4 class="text-light footer-h4-heading">8899 Wandering Way<br />Ooltewah, Tennessee(TN), 37363</h4>
+                </div>
+                <div class="mt-5">
+                    <h3 class="footer-h3-heading">CALL</h3>
+                    <h4 class="text-light footer-h4-heading">+91 91355 11225</h4>
+                </div>
+                <div class="mt-5">
+                    <h3 class="footer-h3-heading">CONNECT</h3>
+                    <div class="d-flex flex-row social-icons-footer">
+                        <h4 class="text-light footer-h4-heading"><i class="fi-snsuxl-facebook"></i></h4>
+                        <h4 class="text-light footer-h4-heading"><i class="fi-xnsuxl-instagram"></i></h4>
+                        <h4 class="text-light footer-h4-heading"><i class="fi-snsuxl-linkedin"></i></h4>
+                    </div>
+                </div>
               </div>
               {/* <div className="our-expertise-border-backround"></div> */}
             </div>
