@@ -1,6 +1,5 @@
 import React, {Fragment} from "react";
 import '../style.css';
-import whoweare from '../images/whoweare.jpg'; 
 import _1 from '../images/_1.jpg'; 
 import _2 from '../images/_2.jpg'; 
 import _3 from '../images/_3.jpg'; 
