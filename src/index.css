@@ -1,8 +1,32 @@
+@font-face {
+  font-family: OPTIAuvantGothic-Medium;
+  src: url(./components/assets/OPTIAuvantGothic-Medium.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Bold;
+  src: url(./components/assets/Marmelat-Bold.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Black;
+  src: url(./components/assets/Marmelat-Black.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Book;
+  src: url(./components/assets/Marmelat-Book.otf);
+}
+
+@font-face {
+  font-family: Marmelat-Medium;
+  src: url(./components/assets/Marmelat-Medium.otf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, OPTIAuvantGothic-Medium, Marmelat-Bold, Marmelat-Black, Marmelat-Book,
+  Marmelat-Medium;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
