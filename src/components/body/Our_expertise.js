@@ -10,7 +10,7 @@ function Our_expertise(){
         <section>
           <div className="container whoweare">
             <div className="row d-flex flex-row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
+              <div data-aos="fade-up" className="col-lg-12 col-md-12 col-sm-12">
                 <h2 className="whoweare-h2-heading">
                   OUR EXPERTISE
                 </h2>
@@ -18,15 +18,15 @@ function Our_expertise(){
               </div>
             </div>
             <div className="row mt-5">
-              <div className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
+              <div data-aos="fade-right" className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
                 <img src={our_expertise_2} className="img-fliud width-img-less" alt="whoarewe" />
                 <div class="our-expertise">Residential Constructions</div>
               </div>
-              <div className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
+              <div data-aos="fade-down" className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
                 <img src={our_expertise_1} className="img-fliud width-img-less" alt="whoarewe" />
                 <div class="our-expertise">Industrial Constructions</div>
               </div>
-              <div className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
+              <div data-aos="fade-left" className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
                 <img src={whoweare} className="img-fliud width-img-less" alt="whoarewe" />
                 <div class="our-expertise">Institutional Constructions</div>
               </div>

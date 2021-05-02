@@ -42,6 +42,11 @@
   z-index: 1020!important;
 }
 
+.navbar-brand img {
+  z-index: 2000;
+position: fixed;
+}
+
 .sidebar {
     font-family: OPTIAuvantGothic-Medium;
     height: 100%;
@@ -237,9 +242,10 @@
 }
 
 .whoweare-paragraph {
-  font-size: 20px;
+  font-size: 17px;
   letter-spacing: 1.2px;
-  line-height: 35px;
+  line-height: 25px;
+  color: #464646;
 }
 
 .whoweare-hr-tag{
@@ -273,7 +279,7 @@
   position: relative;
   top: -46%;
   left: 12.5%;
-  width: 75%;
+  width: 74%;
   height: 600px;
   border: 6px solid #613e28;
 }
@@ -297,8 +303,10 @@
   opacity: 1;
   text-align: left; 
   padding-left: 50px;
-  width: 71%;
+  max-width: 69%;
 }
+
+
 
 .projects_images{
   width:inherit;
@@ -306,6 +314,7 @@
 }
 
 .Projects {
+  font-family: Marmelat-Book;
   min-width: 100%;
   min-height: 100px;
   background-color: #E3E3E3;
@@ -314,9 +323,9 @@
 }
 
 .Projects h6 {
-  letter-spacing: 2px;
+  letter-spacing: 0.70px;
   font-weight:325;
-  color: #111;
+  color: #464646b3;
 }
 
 .Projects span {
@@ -328,7 +337,7 @@
 .bg-background-contact{
   min-height: 350px;
   width: 100%;
-  background: url(./images/banner.jpg) center center / cover no-repeat;
+  background: url(./images/build.jpg) center left / cover no-repeat #08080842;
 }
 
 .text-light {
@@ -390,6 +399,14 @@ padding: 10px 100px;
   .large-font-size {
     margin-left: -225px;
   }
+
+}
+
+@media only screen and (min-width: 1320px) and (max-width: 1920px) {
+
+  .project-section{
+    max-width: 1340px; 
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -403,7 +420,6 @@ padding: 10px 100px;
   }
 
   .demo .scroll-anchor-tag {
-    bottom: 0px;
     left: 30%;
   }
 
@@ -448,6 +464,10 @@ padding: 10px 100px;
   }
 
   .our-expertise {
-    max-width: 93%;
+    max-width: 92%;
+  }
+
+  .navbar-brand img {
+    max-width: 200px;
   }
 }

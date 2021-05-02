@@ -13,7 +13,7 @@ function Projects(){
     return(
       <Fragment>
         <section>
-          <div className="container">
+          <div className="container project-section">
             <div className="row d-flex flex-row">
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <h2 className="whoweare-h2-heading">
@@ -24,7 +24,7 @@ function Projects(){
               </div>
               <div className="row mt-5">
                   
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_1} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>
@@ -35,7 +35,7 @@ function Projects(){
                     </h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_2} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>
@@ -46,7 +46,7 @@ function Projects(){
                     </h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_3} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>
@@ -57,7 +57,7 @@ function Projects(){
                     </h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_4} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>
@@ -71,7 +71,7 @@ function Projects(){
               </div>
               <div className="row mt-5">
                   
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_5} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>
@@ -82,7 +82,7 @@ function Projects(){
                     </h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_6} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>
@@ -93,7 +93,7 @@ function Projects(){
                     </h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_7} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>
@@ -104,7 +104,7 @@ function Projects(){
                     </h6>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap">
+              <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_8} className="img-fliud projects_images" alt="whoarewe" />
                 <div class="Projects">
                     <span>PROJECT NAME</span>

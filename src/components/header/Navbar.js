@@ -1,10 +1,11 @@
 import { Fragment, useState, useEffect, useCallback } from "react";
 import '../style.css';
-import logo from '../images/logo-ivory.png';
+import logo1 from '../images/logo-ivory.png';
+import { motion } from 'framer-motion';
 
 function Navbar() {
     const openNav = useCallback(() => { 
-        document.getElementById("mySidebar").style.width = "450px";
+        document.getElementById("mySidebar").style.width = "350px";
         document.getElementById("main").style.marginLeft = "0px";
     });
 
@@ -35,9 +36,15 @@ function Navbar() {
                 <button id="main" className="openbtn" onClick={openNav}><i class="fi-xnsuxl-three-bars-solid"></i></button> 
             </li>
             <li className="nav-item">
+                <a className="navbar-brand" href="/">
+                                <motion.img
+                                whileHover={{scale: 1.1}} 
+                                src={logo1} className="img-fluid" alt="APP LOGO" />
+                                {/* <img src={logo2} className="img-fluid" alt="APP LOGO" /> */}
+                </a>
             </li>
         </ul>
-                <a className="navbar-brand mr-auto" href="/"><img src={logo} className="img-fluid" alt="APP LOGO" /></a>
+                
     </div>
 </nav>
 <div id="mySidebar" className="sidebar">

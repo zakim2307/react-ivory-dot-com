@@ -16,7 +16,7 @@ function Contact(props){
         <section className="bg-background-contact mt-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center">
+                    <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center" style={{paddingTop: 80 + 'px',paddingBottom: 80 + 'px'}}>
                         <h1 className="text-light">
                             GET IN TOUCH WITH US<br />
                             ABOUT YOUR NEXT<br />

@@ -8,18 +8,18 @@ function Whychooseus(){
         <div>
           <div class="container whoweare mt-5">
             <div class="row d-flex flex-row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div data-aos="fade" class="col-lg-6 col-md-12 col-sm-12">
                 <img src={whychooseus} className="img-fliud max-width-img" alt="whoarewe" />
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12 why-choose-us-reverse-order">
-                <h6 className="whoweare-h6-heading whoweare">
+                <h6 data-aos="zoom-in-left" className="whoweare-h6-heading whoweare">
                   WHY CHOOSE US
                 </h6>
-                <h2 className="whoweare-h2-heading">
+                <h2 data-aos="zoom-in-left" className="whoweare-h2-heading">
                   OUR SISTER COMPANIES
                 </h2>
-                <hr class="whoweare-hr-tag" />
-                <div className="whoweare">
+                <hr data-aos="zoom-in-left" class="whoweare-hr-tag" />
+                <div data-aos="zoom-in-up" className="whoweare">
 
                 <p className="whoweare-paragraph">
                   We work in collaboration with our sister companies for seemless construction processes like digging up sites, transportation of constructionmaterials, use of heavy construction machinery, plumbing, tiling etc without any delays.
