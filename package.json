@@ -9,6 +9,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "create-app-react": "^1.0.6",
+    "emailjs-com": "^2.6.4",
     "framer-motion": "^4.1.11",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",

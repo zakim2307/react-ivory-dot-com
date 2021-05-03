@@ -8,8 +8,8 @@ function Whychooseus(){
         <div>
           <div class="container whoweare mt-5">
             <div class="row d-flex flex-row">
-            <div data-aos="fade" class="col-lg-6 col-md-12 col-sm-12">
-                <img src={whychooseus} className="img-fliud max-width-img" alt="whoarewe" />
+            <div data-aos="fade" className="col-lg-6 col-md-12 col-sm-12 ">
+                <img src={whychooseus} className="img-fliud min-width-100" alt="whoarewe" />
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12 why-choose-us-reverse-order">
                 <h6 data-aos="zoom-in-left" className="whoweare-h6-heading whoweare">
