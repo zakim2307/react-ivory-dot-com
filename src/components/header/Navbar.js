@@ -18,9 +18,22 @@ function Navbar() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY > 1);
+            setScroll(window.scrollY > 950);
         })
     }, [])
+
+    const scrollDown = {
+        up: {
+            opacity: 0
+        },
+        down: {
+            opacity : 1,
+            transition : {
+                type: 'tween',
+                delay: 1
+            }
+        }
+    }
         
     return(
         <Fragment>
@@ -33,10 +46,10 @@ function Navbar() {
             <div className="order-1 order-md-0 d-flex flex-row">
             <ul className="navbar-nav mr-auto d-flex flex-row">
             <li className="nav-item">
-                <button id="main" className="openbtn" onClick={openNav}><i class="fi-xnsuxl-three-bars-solid"></i></button> 
+                <button id="main" className="openbtn" onClick={openNav}><i class="fi-xtluxl-three-bars-thin"></i></button> 
             </li>
             <li className="nav-item">
-                <a className="navbar-brand" href="/">
+                <a className={`navbar-brand ${scroll ? "zeroOpacity" : ""}`}  href="/">
                                 <motion.img
                                 whileHover={{scale: 1.1}} 
                                 src={logo1} className="img-fluid" alt="APP LOGO" />
@@ -49,11 +62,11 @@ function Navbar() {
 </nav>
 <div id="mySidebar" className="sidebar">
                 <a className="closebtn" style={{color:'#c3996c'}} onClick={closeNav}>X</a>
-                <a href="#">WHO WE ARE</a>
-                <a href="#">WHY CHOOSE US</a>
-                <a href="#">OUR EXPERTISE</a>
-                <a href="#">CONTACT US</a>
-                <a href="#">PROJECTS</a>
+                <a href="#whoweare">WHO WE ARE</a>
+                <a href="#whychooseus">WHY CHOOSE US</a>
+                <a href="#ourexpertise">OUR EXPERTISE</a>
+                <a href="#contactus">CONTACT US</a>
+                <a href="#projects">PROJECTS</a>
                 <div className="container">
                 <hr className="hr-sidebar-tag" />
                 </div>
@@ -86,9 +99,15 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <section id="section02" class="demo">
-                <a class="scroll-anchor-tag" href="#section03">SCROLL DOWN<br /> TO EXPLORE<span></span></a>
-            </section>
+            <motion.div 
+                variants={scrollDown}
+                initial="up"
+                animate="down"
+                >
+                <section id="section02" class={`demo ${scroll ? "hands" : "nohands"}`}>
+                    <a class="scroll-anchor-tag" href="#whoweare">SCROLL DOWN<br /> TO EXPLORE<span></span></a>
+                </section>
+            </motion.div>
           
         </section>
         </Fragment>

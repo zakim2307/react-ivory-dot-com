@@ -7,23 +7,30 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "aos": "^2.3.4",
+    "aws-cli": "^0.0.2",
     "bootstrap": "^4.6.0",
+    "classnames": "^2.3.1",
     "create-app-react": "^1.0.6",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^4.1.11",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.2",
+    "react-block-reveal-animation": "^1.0.1",
     "react-dom": "^17.0.2",
+    "react-parallax": "^3.3.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll-parallax": "^2.4.0",
+    "scrollreveal": "^4.0.9",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_PATH=src react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build s3://ivorydotcom"
   },
   "eslintConfig": {
     "extends": [

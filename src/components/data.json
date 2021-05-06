@@ -1,0 +1,42 @@
+{
+    "leadingText": "Residential",
+    "slides": [
+      {
+        "introline": "Group housing",
+        "id": "dogs",
+        "content": {
+          "image": "https://via.placeholder.com/400x200?text=Dogs",
+          "copy": "Dog ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+        }
+      },
+  
+      {
+        "introline": "Bungalows",
+        "id": "lizards",
+        "content": {
+          "image": "https://via.placeholder.com/400x200?text=Lizards",
+          "copy": "Lizards ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+        }
+      },
+      {
+        "introline": "Villas",
+        "id": "villas",
+        "content": {
+          "image": "/home/zaki/Projects/reactjs/ivory_construction/src/components/images/res1.jpg",
+          "copy": "Snakes ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+        }
+      },
+      {
+        "introline": "Apartments",
+        "id": "cats",
+        "content": {
+          "image": "https://via.placeholder.com/400x200?text=Cats",
+          "copy": "Cats ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan est ornare, ultricies erat a, dapibus lectus."
+        }
+      }
+      
+      
+      
+    ]
+}
+  

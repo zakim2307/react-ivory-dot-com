@@ -5,21 +5,26 @@ import whychooseus from '../images/whychooseus.png';
 function Whychooseus(){
     return(
       <Fragment>
-        <div>
-          <div class="container whoweare mt-5">
-            <div class="row d-flex flex-row">
-            <div data-aos="fade" className="col-lg-6 col-md-12 col-sm-12 ">
+        <div id="whychooseus" className="mt-5">
+          <div className="container whoweare mt-5">
+            <div className="row d-flex flex-row">
+            <div className="col-lg-6 col-md-12 col-sm-12 ">
                 <img src={whychooseus} className="img-fliud min-width-100" alt="whoarewe" />
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12 why-choose-us-reverse-order">
-                <h6 data-aos="zoom-in-left" className="whoweare-h6-heading whoweare">
+              <div class="reveal-holder">
+                <div class="reveal-block" data-aos="reveal-right">
+                </div>
+                <h6 className="whoweare-h6-heading whoweare">
                   WHY CHOOSE US
                 </h6>
-                <h2 data-aos="zoom-in-left" className="whoweare-h2-heading">
+                <h2 className="whoweare-h2-heading">
                   OUR SISTER COMPANIES
                 </h2>
+                
+                </div>
                 <hr data-aos="zoom-in-left" class="whoweare-hr-tag" />
-                <div data-aos="zoom-in-up" className="whoweare">
+                <div className="whoweare">
 
                 <p className="whoweare-paragraph">
                   We work in collaboration with our sister companies for seemless construction processes like digging up sites, transportation of constructionmaterials, use of heavy construction machinery, plumbing, tiling etc without any delays.

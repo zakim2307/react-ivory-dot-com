@@ -1,15 +1,15 @@
 import React, {Fragment} from "react";
 import '../style.css';
-import India from '../images/india.png'; 
+import India from '../images/india1.png'; 
 
 function Our_expertise(){
     return(
       <Fragment>
-        <section class="dark-bg pt-5">
+        <section class="dark-bg pt-2">
           <div className="container">
             <div className="row mt-5">
               <div className="col-lg-6 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
-                <img src={India} className="img-fliud width-img-less" alt="whoarewe" />
+                <img src={India} className="img-fliud" alt="whoarewe" />
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 d-flex flex-column flex-wrap justify-content-center mb-5">
                 <h4 class="text-light footer-h4-heading">If you would like to discuss your next construction project or for future employment queries, please do not hesitate to send us an email at <a href="mailto:enquiry@ivory.com">enquiry@ivory.com</a></h4>
