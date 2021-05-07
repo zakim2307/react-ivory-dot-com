@@ -12,7 +12,7 @@ function Our_expertise(){
                 <img src={India} className="img-fliud" alt="whoarewe" />
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 d-flex flex-column flex-wrap justify-content-center mb-5">
-                <h4 class="text-light footer-h4-heading">If you would like to discuss your next construction project or for future employment queries, please do not hesitate to send us an email at <a href="mailto:enquiry@ivory.com">enquiry@ivory.com</a></h4>
+                <h4 class="text-light footer-h4-heading">If you would like to discuss your next construction project or for future employment queries, please do not hesitate to send us an email at <a href="mailto:enquiry@ivory.com" class="text-light">enquiry@ivory.com</a></h4>
                 <div class="mt-5">
                     <h3 class="footer-h3-heading">FIND US</h3>
                     <h4 class="text-light footer-h4-heading">8899 Wandering Way<br />Ooltewah, Tennessee(TN), 37363</h4>
