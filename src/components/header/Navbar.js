@@ -94,7 +94,7 @@ function Navbar() {
             </div>
             <div className="container pt-5">
                 <div className="row">
-                    <div className="col-offset-lg-2 col-lg-9 col-md-12 col-sm-12 d-flex">
+                    <div className="col-offset-lg-2 col-lg-9 col-md-12 col-sm-12 d-flex hidpi-screen">
                         <h1 class="large-font-size">We Create Homes</h1>
                     </div>
                 </div>
