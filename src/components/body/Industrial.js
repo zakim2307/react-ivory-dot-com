@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import "../vertical.css";
+import { useCallback } from "react/cjs/react.development";
 
 /*
  * Read the blog post here:
@@ -47,7 +48,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
     }
   };
 
-  const handleClick = (direction) => {
+  const handleClick = useCallback((direction) => {
     setActiveIndex((prevIndex) => {
       if (direction === "next") {
         if (prevIndex + 1 > data.length - 1) {
@@ -62,22 +63,21 @@ const VerticalCarousel = ({ data, leadingText }) => {
 
       return prevIndex - 1;
     });
-  };
+  }, [data.length]);
 
   useEffect(() => {
-    const interval_id = setInterval(handleClick, 3000);
+    const interval_id = setInterval(handleClick, 1000);
      return () => {
        // Stop the interval when the component unmounts. 
        // Otherwise it will keeep going and you will get an error.
        clearInterval(interval_id)
      }
-  }, []);
+  }, [activeIndex, handleClick]);
 
   return (
     <>
    {/* <div className="container" style={{position:""}}> */}
    <div className="container con500" style={{position:"absolute"}}>
-     {console.log("hello")}
       <section className="outer-container">
         <div className="carousel-wrapper">
           <div className="carousel">

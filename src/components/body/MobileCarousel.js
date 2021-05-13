@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import "../vertical1.css";
+import { useCallback } from "react/cjs/react.development";
 
 /*
  * Read the blog post here:
@@ -22,7 +23,6 @@ const VerticalCarousel = ({ data, leadingText }) => {
 
   // Used to determine which items should be visible. this prevents the "ghosting" animation
   const visibleStyleThreshold = shuffleThreshold / 1;
-  console.log(halfwayIndex, itemHeight, shuffleThreshold, visibleStyleThreshold)
   const determinePlacement = (itemIndex) => {
     // If these match, the item is active
     if (activeIndex === itemIndex) return 0;
@@ -47,7 +47,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
     }
   };
 
-  const handleClick = (direction) => {
+  const handleClick = useCallback((direction) => {
     setActiveIndex((prevIndex) => {
       if (direction === "next") {
         if (prevIndex + 1 > data.length - 1) {
@@ -62,14 +62,14 @@ const VerticalCarousel = ({ data, leadingText }) => {
 
       return prevIndex - 1;
     });
-  };
+  }, [data.length]);
 
   useEffect(() => {
-    const interval_id = setInterval(handleClick, 3000);
+    const interval_id = setInterval(handleClick, 1000);
      return () => {
        clearInterval(interval_id)
      }
-  }, []);
+  }, [activeIndex, handleClick]);
 
   return (
     <>

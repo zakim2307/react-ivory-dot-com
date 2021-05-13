@@ -107,7 +107,8 @@
   } */
   
   .outer-container {
-    /* position: relative;
+    position: relative;
+    /* 
     max-width: 800px;
     margin: auto;
     display: flex;
@@ -118,6 +119,7 @@
   }
 
   .outer-container-mobile1 {
+    position: relative;
     display: flex;
     flex-direction: column !important;
   }
@@ -139,7 +141,7 @@
   
   .carousel-wrapper1 {
     position: absolute;
-    width: 86.5%;
+    width: 100%;
     max-height: 100px;
     /* height: 400px; */
     bottom: 0;

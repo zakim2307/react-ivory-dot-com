@@ -129,7 +129,7 @@ function Our_expertise(){
     "leadingText": "Industrial",
     "slides": [
       {
-        "introline": "Institutional",
+        "introline": "Schools",
         "id": "dogs",
         "content": {
           "image": `${ins1}`,
@@ -138,7 +138,7 @@ function Our_expertise(){
       },
   
       {
-        "introline": "Bungalows",
+        "introline": "Stadiums",
         "id": "lizards",
         "content": {
           "image": `${ins2}`,
@@ -146,7 +146,7 @@ function Our_expertise(){
         }
       },
       {
-        "introline": "Villas",
+        "introline": "Hospitals",
         "id": "villas",
         "content": {
           "image": `${ins3}`,
@@ -154,7 +154,7 @@ function Our_expertise(){
         }
       },
       {
-        "introline": "Apartments",
+        "introline": "Shopping Centres",
         "id": "cats",
         "content": {
           "image": `${ins5}`,
@@ -165,26 +165,26 @@ function Our_expertise(){
   }
     return(
       <Fragment>
-        <section className="mt-5" id="ourexpertise">
+        <section className="" id="ourexpertise">
           <div className="container whoweare">
             <div className="row d-flex flex-row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <div class="reveal-holder">
-                <div class="reveal-block" data-aos="reveal-right"></div>
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <div className="reveal-holder">
+                <div className="reveal-block" data-aos="reveal-right"></div>
                 <h2 className="heading whoweare-h2-heading">
                   OUR EXPERTISE
                 </h2>
                 </div>
-                <hr className="whoweare-hr-tag" />
+                <hr data-aos="zoom-out-right" data-aos-delay="200" className="whoweare-hr-tag" />
               </div>
             </div>
-            <div className="row mt-5 pt-3 position-relative">
+            <div className="row mt-5 pt-3 position-relative hide-in-med">
               <div className="our-expertise-border-backround d-none d-lg-block"></div>
                 <div
                 onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
                 className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
                   <motion.img src={resid} className="img-fliud width-img-less" alt="whoarewe" />
-                  <div class="our-expertise">Residential Constructions</div>
+                  <div className="our-expertise">Residential Constructions</div>
                   {inHover &&
                     <motion.div 
                       initial={{ opacity: 0, scale: 0.2 }}
@@ -199,7 +199,7 @@ function Our_expertise(){
                 onMouseEnter={() => setHover1(true)} onMouseLeave={() => setHover1(false)}
                className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
                 <img src={indus} className="img-fliud width-img-less" alt="whoarewe" />
-                <div class="our-expertise">Industrial Constructions</div>
+                <div className="our-expertise">Industrial Constructions</div>
                 {inHover1 &&
                     <motion.div 
                       initial={{ opacity: 0, scale: 0.2 }}
@@ -214,7 +214,7 @@ function Our_expertise(){
                 onMouseEnter={() => setHover2(true)} onMouseLeave={() => setHover2(false)}
               className="col-lg-4 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center mb-5">
                 <img src={insti} className="img-fliud width-img-less" alt="whoarewe" />
-                <div class="our-expertise">Institutional Constructions</div>
+                <div className="our-expertise">Institutional Constructions</div>
                 {inHover2 &&
                     <motion.div 
                       initial={{ opacity: 0, scale: 0.2 }}
@@ -228,7 +228,7 @@ function Our_expertise(){
             </div>
             
           </div>
-
+          <div className="container d-block d-lg-none whoweare">
           <div className="row position-relative-sm">
 <div>
 
@@ -248,7 +248,6 @@ Institutional<br />
                 </h2>
 <MobileCarousel className="" data={data.slides} leadingText={institutional.leadingText} />
 </div>
-<hr />
 
 <div className="col-lg-12 col-sm-12 col-md-12">
 <h2 className="heading whoweare-h2-heading" style={{padding: 20, marginTop: 20, marginBottom: 20}}>
@@ -258,27 +257,7 @@ Industrial<br />
 <MobileCarousel className="" data={industrial.slides} leadingText={institutional.leadingText} />
 </div>
 </div>
-
-
-{/* <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-<ol className="carousel-indicators">
-<li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-</ol>
-<div className="carousel-inner">
-<div className="carousel-item active">
-<img className="d-block w-100" src='../images/ins1.jpg' alt="First slide" />
 </div>
-<div className="carousel-item">
-<img className="d-block w-100" src={`${ins2}`} alt="Second slide" />
-</div>
-<div className="carousel-item">
-<img className="d-block w-100" src={`${ins2}`} alt="Third slide" />
-</div>
-</div>
-</div> */}
-
 </div>
 
         </section>

@@ -36,12 +36,12 @@ function PROJECT_SINGLE(){
 
     return(
       <Fragment>
-        <section>
+        <section id="project-single">
           <motion.div
           varients={{containerVariants}}
           initial="hidden"
           animate="visible" 
-          className="container project-section mt-5 pt-5">
+          className="container project-section mt5 pt-5">
             <div className="row d-flex flex-row">
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <h2 className="whoweare-h2-heading">
@@ -54,7 +54,7 @@ function PROJECT_SINGLE(){
                   
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5 ">
                 <img src={_1} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 
@@ -65,7 +65,7 @@ function PROJECT_SINGLE(){
               </div>
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_2} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 
@@ -76,7 +76,7 @@ function PROJECT_SINGLE(){
               </div>
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_3} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 
@@ -87,7 +87,7 @@ function PROJECT_SINGLE(){
               </div>
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_4} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 
@@ -100,7 +100,7 @@ function PROJECT_SINGLE(){
               <div className="row mt-5">         
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_5} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 
@@ -111,7 +111,7 @@ function PROJECT_SINGLE(){
               </div>
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_6} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 
@@ -122,7 +122,7 @@ function PROJECT_SINGLE(){
               </div>
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_7} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 
@@ -133,7 +133,7 @@ function PROJECT_SINGLE(){
               </div>
               <div data-aos="zoom-out-up" className="col-lg-3 col-md-12 col-sm-12 d-flex flex-wrap mb-5">
                 <img src={_8} className="img-fliud projects_images" alt="whoarewe" />
-                <div class="Projects">
+                <div className="Projects">
                     <span>PROJECT NAME</span>
                 <hr className="whoweare-hr-tag-2" />
 

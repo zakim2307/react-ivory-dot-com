@@ -5,15 +5,15 @@ import whychooseus from '../images/whychooseus.png';
 function Whychooseus(){
     return(
       <Fragment>
-        <div id="whychooseus" className="mt-5">
-          <div className="container whoweare mt-5">
+        <div id="whychooseus" className="">
+          <div className="container whoweare">
             <div className="row d-flex flex-row">
-            <div className="col-lg-6 col-md-12 col-sm-12 ">
+            <div className="col-lg-6 col-md-6 col-sm-12">
                 <img src={whychooseus} className="img-fliud min-width-100" alt="whoarewe" />
               </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 why-choose-us-reverse-order">
-              <div class="reveal-holder">
-                <div class="reveal-block" data-aos="reveal-right">
+              <div className="col-lg-6 col-md-6 col-sm-12 why-choose-us-reverse-order">
+              <div className="reveal-holder">
+                <div className="reveal-block" data-aos="reveal-right">
                 </div>
                 <h6 className="whoweare-h6-heading whoweare">
                   WHY CHOOSE US
@@ -23,7 +23,7 @@ function Whychooseus(){
                 </h2>
                 
                 </div>
-                <hr data-aos="zoom-in-left" class="whoweare-hr-tag" />
+                <hr data-aos="zoom-out-right" data-aos-delay="200" className="whoweare-hr-tag" />
                 <div className="whoweare">
 
                 <p className="whoweare-paragraph">
@@ -39,7 +39,9 @@ function Whychooseus(){
                   We work as a team to make our construction process seemless, fast and reliable for our customers.
                 </p>
                 </div>
-                <h6 className="whoweare-h6-heading-second">TRUST OUR PROCESS</h6>
+                <div className="">
+                  <h6 className="wrapper"><a className="whoweare-h6-heading-second" href="#ourexpertise" style={{padding: 9 + 'px'}}><span>Trust Our Process</span></a></h6>
+                </div>
               </div>
               
             </div>

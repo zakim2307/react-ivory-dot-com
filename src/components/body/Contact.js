@@ -1,30 +1,30 @@
-import React, {Fragment, useState, useEffect } from "react";
+import React, {Fragment, useState } from "react";
 import '../style.css';
 import emailjs, { init } from 'emailjs-com';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 
 //parallax images
 
-import bg_image from '../images/build.jpg';
+import bg_image from '../images/par.png';
 
 // parallax images
 
 function Contact(props){
     init("user_vZW3dhCovmNnWwjrhlYPa")
-    const [offsetY, setOffsetY] = useState(0);
+    // const [offsetY, setOffsetY] = useState(0);
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const handleSCroll = () => setOffsetY(window.pageYOffset);
+    // const handleSCroll = () => setOffsetY(window.pageYOffset);
 
-    useEffect(() => {
-      window.addEventListener('scroll', handleSCroll);
+    // useEffect(() => {
+    //   window.addEventListener('scroll', handleSCroll);
 
-      return () => window.removeEventListener('scroll', handleSCroll);
-    }, []);
+    //   return () => window.removeEventListener('scroll', handleSCroll);
+    // }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -58,17 +58,15 @@ function Contact(props){
 
     return(
       <Fragment>
-        {/* style={{ position: `fixed`,transform: `translateY( ${ offsetY * 0 }px )`}} */}
         <section id="contactus">
          
         <Parallax bgImage={bg_image} strength={500}>
-          <div class="paralax-dev" style={{ height: 400+'px'}}>
-          <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center" style={{paddingTop: 80 + 'px',paddingBottom: 80 + 'px'}}>
+          <div className="paralax-dev" style={{ height: 400+'px'}}>
+          <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center" style={{paddingTop: 140 + 'px',paddingBottom: 100 + 'px', letterSpacing: 6+ 'px'}}>
                         <h1 className="text-light">
                             GET IN TOUCH WITH US<br />
                             ABOUT YOUR NEXT<br />
-                            CONSTRUCTION<br />
-                            PROJECT
+                            CONSTRUCTION PROJECT
                         </h1>
                     </div>
           </div>
@@ -76,12 +74,11 @@ function Contact(props){
 
         <Parallax className="parallax-mobile" bgImage={bg_image} strength={500} style={{backgroundSize: 'cover'}}>
           <div className="paralax-dev-sm" style={{ height: 'auto'}}>
-          <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center" style={{paddingTop: 80 + 'px',paddingBottom: 80 + 'px'}}>
+          <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center" style={{paddingTop: 120 + 'px',paddingBottom: 100 + 'px', letterSpacing: 6+ 'px'}}>
                         <h4 className="text-light">
                             GET IN TOUCH WITH US<br />
                             ABOUT YOUR NEXT<br />
-                            CONSTRUCTION<br />
-                            PROJECT
+                            CONSTRUCTION PROJECT
                         </h4>
                     </div>
           </div>
@@ -89,8 +86,8 @@ function Contact(props){
           
           </section>
 
-          {/* <section class="paralax-dev-sm bg-background-contact">
-          <div class="paralax-dev-sm" style={{ height: 400+'px'}}>
+          {/* <section className="paralax-dev-sm bg-background-contact">
+          <div className="paralax-dev-sm" style={{ height: 400+'px'}}>
           <div className="col-sm-12 col-md-12 col-lg-12 my-auto text-center" style={{paddingTop: 80 + 'px',paddingBottom: 80 + 'px'}}>
                         <h1 className="text-light">
                             GET IN TOUCH WITH US<br />
@@ -101,21 +98,25 @@ function Contact(props){
                     </div>
           </div>
           </section> */}
+          <section id="contact-form">
 
           <div className="container mt-5 pt-5">
             <div className="row d-flex flex-row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="reveal-holder">
+                <div className="reveal-block" data-aos="reveal-right"></div>
                 <h2 className="whoweare-h2-heading">
                   CONTACT US
                 </h2>
-                <hr className="whoweare-hr-tag" />
-                <h6 className="whoweare-h2-heading contact-minus-margin ml-5">
-                  Little About You
-                </h6>
+                </div>
+                <hr data-aos="zoom-out-right" data-aos-delay="200" className="whoweare-hr-tag" />
               </div>
             </div>
             <div className="row ml-5 mt-5 d-flex flex-row contact-minus-margin">
-              <div class="col-sm-12 col-md-12 col-lg-12">
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                  <h6 className="contact-inner-head whoweare-h6-heading contact-minus-margin ml-3 mb-5">
+                  Little About You
+                </h6>
                   <form onSubmit={handleSubmit} style={{width:100 + "%"}}>
                       <div className="col-lg-6 col-md-6 col-sm-12 mb-5">
                           <input className="styled-form-component form-control" type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Name"/>
@@ -129,6 +130,9 @@ function Contact(props){
                         </div>
                       </div>
                       <div className="col-lg-12 col-md-12 col-sm-12 mr-5 mb-5">
+                      <h6 className="contact-inner-head whoweare-h6-heading contact-minus-margin ml-3 mb-5">
+                  Write Your Message
+                </h6>
                           <textarea className="styled-form-component form-control" id="w3review" value={message} onChange={e => setMessage(e.target.value)} placeholder="Enter A Message" name="message" rows="4" cols="50"></textarea>
                       </div>
                       <div className="col-lg-3 col-md-6 col-sm-9">
@@ -136,12 +140,13 @@ function Contact(props){
                       </div>
                   </form>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6">
+                <div className="col-sm-12 col-md-12 col-lg-6">
                 
               </div>
               {/* <div className="our-expertise-border-backround"></div> */}
             </div>
           </div>
+          </section>
       </Fragment>
     );
 }

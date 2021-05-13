@@ -8,11 +8,11 @@ function Header(){
    return(
       <Fragment>
         <div id="whoweare">
-          <div class="container mt-5 pt-5">
-            <div class="row d-flex flex-row justify-content-space-between">
-              <div class="col-lg-6 col-md-12 col-sm-12">
-              <div class="reveal-holder">
-                <div class="reveal-block" data-aos="reveal-right"></div>
+          <div className="container pt-5">
+            <div className="row d-flex flex-row justify-content-space-between">
+              <div className="col-lg-6 col-md-6 col-sm-12 mb-5">
+              <div className="reveal-holder">
+                <div className="reveal-block" data-aos="reveal-right"></div>
                 <h6 className="heading whoweare-h6-heading">
                   WHO WE ARE
                 </h6>
@@ -20,15 +20,7 @@ function Header(){
                   CONSTRUCTION FIRM
                 </h2>
                 </div>
-                <hr class="whoweare-hr-tag" />
-                {/* <BlockRevealAnimation className="" delay={1} duration={1} color="#c29776">
-                <h6 data-aos="zoom-in-right" className="whoweare-h6-heading whoweare">
-                  WHO WE ARE
-                </h6>
-                <h2 data-aos="zoom-in-right" className="whoweare-h2-heading">
-                  CONSTRUCTION FIRM
-                </h2>
-                </BlockRevealAnimation> */}
+                <hr data-aos="zoom-out-right" data-aos-delay="200" className="whoweare-hr-tag" />
                 <motion.div className="whoweare">
 
                 <p className="whoweare-paragraph">
@@ -44,9 +36,11 @@ function Header(){
                   We pride ourselves in the great working relationships we build with our partners and clients, who appreciate the ability for direct contact throughout this family run business.
                 </p>
                 </motion.div>
-                <h6 className="whoweare-h6-heading-second">FIND OUT MORE ABOUT IVORY GROUPS</h6>
+                <div>
+                  <h6 className=""><a className="whoweare-h6-heading-second" href="#whychooseus"><span>FIND OUT MORE ABOUT IVORY GROUPS</span></a></h6>
+                </div>
               </div>
-              <div class="col-lg-6 col-md-12 col-sm-12">
+              <div className="col-lg-6 col-md-6 col-sm-12">
                 <img src={whoweare} className="img-fliud max-width-img" alt="whoarewe" />
               </div>
             </div>

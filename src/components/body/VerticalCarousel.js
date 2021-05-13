@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import "../vertical.css";
 import { motion } from 'framer-motion';
+import { useCallback } from "react/cjs/react.development";
 
 /*
  * Read the blog post here:
@@ -48,7 +49,7 @@ const VerticalCarousel = ({ data, leadingText }) => {
     }
   };
 
-  const handleClick = (direction) => {
+  const handleClick = useCallback((direction) => {
     setActiveIndex((prevIndex) => {
       if (direction === "next") {
         if (prevIndex + 1 > data.length - 1) {
@@ -63,16 +64,16 @@ const VerticalCarousel = ({ data, leadingText }) => {
 
       return prevIndex - 1;
     });
-  };
+  }, [data.length]);
 
   useEffect(() => {
-    const interval_id = setInterval(handleClick, 3000);
+    const interval_id = setInterval(handleClick, 1000);
      return () => {
        // Stop the interval when the component unmounts. 
        // Otherwise it will keeep going and you will get an error.
        clearInterval(interval_id)
      }
-  }, []);
+  }, [handleClick]);
 
   return (
     <>

@@ -65,11 +65,11 @@ const VerticalCarousel = ({ data, leadingText }) => {
   };
 
   useEffect(() => {
-    const interval_id = setInterval(handleClick, 3000);
+    const interval_id = setInterval(handleClick, 1000);
      return () => {
        clearInterval(interval_id)
      }
-  }, []);
+  }, [activeIndex]);
 
   return (
     <>
