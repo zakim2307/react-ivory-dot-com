@@ -16,6 +16,7 @@
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.2",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-block-reveal-animation": "^1.0.1",
     "react-dom": "^17.0.2",
     "react-parallax": "^3.3.0",

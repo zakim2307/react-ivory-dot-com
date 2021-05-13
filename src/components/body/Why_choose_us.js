@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
 import '../style.css';
 import whychooseus from '../images/whychooseus.png'; 
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Whychooseus(){
     return(
@@ -40,7 +41,7 @@ function Whychooseus(){
                 </p>
                 </div>
                 <div className="">
-                  <h6 className="wrapper"><a className="whoweare-h6-heading-second" href="#ourexpertise" style={{padding: 9 + 'px'}}><span>Trust Our Process</span></a></h6>
+                  <h6 className="wrapper"><AnchorLink className="whoweare-h6-heading-second" href="#ourexpertise" style={{padding: 9 + 'px'}}><span>Trust Our Process</span></AnchorLink></h6>
                 </div>
               </div>
               

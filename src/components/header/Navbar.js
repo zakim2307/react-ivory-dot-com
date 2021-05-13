@@ -5,6 +5,7 @@ import cross1 from '../images/icons/cross1.png';
 import hamburger1 from '../images/icons/hamburger1.png';
 import arrow1 from '../images/icons/arrow1.png';
 import { motion } from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Navbar() {
     const openNav = useCallback(() => { 
@@ -69,11 +70,11 @@ function Navbar() {
                         <img src={`${cross1}`} alt="Flowers" className="img-fluid" />
                     </picture> 
                 </div>
-                <a href="#whoweare" onClick={closeNav}>WHO WE ARE</a>
-                <a href="#whychooseus" onClick={closeNav}>WHY CHOOSE US</a>
-                <a href="#ourexpertise" onClick={closeNav}>OUR EXPERTISE</a>
-                <a href="#contactus" onClick={closeNav}>CONTACT US</a>
-                <a href="#projects" onClick={closeNav}>PROJECTS</a>
+                <AnchorLink href="#whoweare" onClick={closeNav}>WHO WE ARE</AnchorLink>
+                <AnchorLink href="#whychooseus" onClick={closeNav}>WHY CHOOSE US</AnchorLink>
+                <AnchorLink href="#ourexpertise" onClick={closeNav}>OUR EXPERTISE</AnchorLink>
+                <AnchorLink href="#contactus" onClick={closeNav}>CONTACT US</AnchorLink>
+                <AnchorLink href="#projects" onClick={closeNav}>PROJECTS</AnchorLink>
                 <div className="container">
                 <hr className="hr-sidebar-tag" />
                 </div>
@@ -114,18 +115,18 @@ function Navbar() {
                     style={{width:100+'%'}}
                     >
                     <div className="text-arrow-down">
-                        <a href="#whoweare">
+                        <AnchorLink href="#whoweare">
                             <span>SCROLL DOWN<br />TO EXPLORE</span>
-                        </a>
+                        </AnchorLink>
                     </div>
                     <div className="picture-arrow-down">
-                        <a href="#whoweare">
+                        <AnchorLink href="#whoweare">
                             <picture>
                                     <source media="(min-width:1440px)" srcSet={`${arrow1}`}  />
                                     <source media="(min-width:768px)" srcSet={`${arrow1}`}  />
                                     <img src={`${arrow1}`} alt="Flowers" style={{width:'auto'}} />
                             </picture> 
-                        </a>
+                        </AnchorLink>
                     </div>
                 </motion.div>
           

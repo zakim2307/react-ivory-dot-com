@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import '../style.css';
 import whoweare from '../images/whoweare.png'; 
 import {motion} from 'framer-motion';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Header(){
    return(
@@ -37,7 +37,7 @@ function Header(){
                 </p>
                 </motion.div>
                 <div>
-                  <h6 className=""><a className="whoweare-h6-heading-second" href="#whychooseus"><span>FIND OUT MORE ABOUT IVORY GROUPS</span></a></h6>
+                  <h6 className=""><AnchorLink className="whoweare-h6-heading-second" href="#whychooseus"><span>FIND OUT MORE ABOUT IVORY GROUPS</span></AnchorLink></h6>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12">
